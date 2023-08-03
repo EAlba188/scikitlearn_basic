@@ -45,6 +45,8 @@ if __name__ == "__main__":
     """
     ipca = IncrementalPCA(n_components=3, batch_size=10)
     ipca.fit(x_train)
+    print(pca.explained_variance_)
+    print(pca.explained_variance_ratio_)
 
     plt.plot(range(len(pca.explained_variance_)), pca.explained_variance_ratio_)
     plt.show()
